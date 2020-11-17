@@ -42,6 +42,10 @@ matrix:
     - os: osx
       compiler: gcc
       env: HOST=cmake WINE= DECODESTREAMS=
+    #powerjobs
+    - compiler: clang
+      arch: ppc64le
+      env: HOST= WINE= DECODESTREAMS=    
   allow_failures:
     - env: HOST= WINE= DECODESTREAMS=libde265-teststreams-fuzzing THREADING=
     - env: HOST= WINE= DECODESTREAMS=libde265-teststreams-fuzzing THREADING=--single-threaded
